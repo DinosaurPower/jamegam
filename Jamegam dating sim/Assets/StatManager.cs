@@ -21,4 +21,8 @@ public class StatManager : MonoBehaviour
     {
 
     }
+    public void UpdateCount()
+    {
+
+    }
 }

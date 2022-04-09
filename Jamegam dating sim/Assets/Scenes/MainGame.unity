@@ -337,10 +337,10 @@ RectTransform:
   m_Father: {fileID: 630768054}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.985077, y: -36.700577}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.36283994, y: 0.37777996}
+  m_AnchorMax: {x: 0.5453202, y: 0.43888515}
+  m_AnchoredPosition: {x: -0.4850769, y: 0.7994232}
+  m_SizeDelta: {x: 3, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936202600
 MonoBehaviour:
@@ -357,9 +357,7 @@ MonoBehaviour:
   slugNumber: 1
   dolphinNumber: -2
   carrotNumber: 0
-  slugCount: 0
-  dolphinCount: 0
-  carrotCount: 0
+  SceneManager: {fileID: 1649913313}
 --- !u!114 &936202601
 MonoBehaviour:
   m_ObjectHideFlags: 0
