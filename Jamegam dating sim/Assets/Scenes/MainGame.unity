@@ -338,10 +338,10 @@ RectTransform:
   m_Father: {fileID: 630768054}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.36283994, y: 0.37777996}
-  m_AnchorMax: {x: 0.5453202, y: 0.43888515}
-  m_AnchoredPosition: {x: -0.4850769, y: 0.7994232}
-  m_SizeDelta: {x: 3, y: 5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1, y: 1}
+  m_SizeDelta: {x: 155, y: 23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936202600
 MonoBehaviour:
@@ -691,7 +691,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.992647, g: 0.6458246, b: 0.51822007, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
