@@ -44,6 +44,7 @@ public class Counter : MonoBehaviour
         dolphinCount = dolphinCount + dolphinNumber;
         carrotCount = carrotCount + carrotNumber;
 
+        GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().UpdateCount();
 
     }
 }
