@@ -354,8 +354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c38204a7c6e541928d35ce01de0cff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slugNumber: 0
-  dolphinNumber: 0
+  slugNumber: 1
+  dolphinNumber: -2
   carrotNumber: 0
   slugCount: 0
   dolphinCount: 0
@@ -403,7 +403,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 936202602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 936202600}
+        m_TargetAssemblyTypeName: Counter, Assembly-CSharp
+        m_MethodName: Count
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &936202602
 MonoBehaviour:
   m_ObjectHideFlags: 0
