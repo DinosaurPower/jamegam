@@ -20,7 +20,7 @@ public class Counter : MonoBehaviour
     {
      
        
-        GameObject sceneManager = GameObject.Find("STAT_MANAGER");
+        
         StatManager statManager = NumberManager.GetComponent<StatManager>();
         //here I am getting stats from stat manager
         //it is WIP yet :p
