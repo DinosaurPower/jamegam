@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Counter : MonoBehaviour
 {
-
+    
     //setting up the numbers the way we can adjust them regards to different dialogue options
     public int slugNumber;
     public int dolphinNumber;
     public int carrotNumber;
     public GameObject NumberManager;
-
+   
     public int slugCount;
     public int dolphinCount;
     public int carrotCount;
@@ -18,7 +18,9 @@ public class Counter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject sceneManager = GameObject.Find("STAT_MANAGER");
+     
+       
+        
         StatManager statManager = NumberManager.GetComponent<StatManager>();
         //here I am getting stats from stat manager
         //it is WIP yet :p
@@ -47,4 +49,6 @@ public class Counter : MonoBehaviour
         GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().UpdateCount();
 
     }
+   
+
 }
