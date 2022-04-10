@@ -32,8 +32,5 @@ public class AudioDistortion : MonoBehaviour
         //
 
     }
-    public void killEars()
-    {
-        masterMixer.SetFloat("Pitch", wobblesin());
-    }
+    
 }
