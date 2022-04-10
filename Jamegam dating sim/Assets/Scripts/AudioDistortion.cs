@@ -23,6 +23,7 @@ public class AudioDistortion : MonoBehaviour
     void FixedUpdate()
     {
         // wobblelvl = wobblesin+1;
+        masterMixer.SetFloat("Pitch", wobblesin());
     }
 
     // Update is called once per frame
