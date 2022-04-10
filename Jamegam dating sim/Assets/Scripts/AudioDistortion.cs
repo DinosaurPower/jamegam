@@ -7,26 +7,33 @@ public class AudioDistortion : MonoBehaviour
 {
     public AudioMixer masterMixer;
     public float wobblelvl;
-  float wobblesin()
+    float wobblesin()
     {
-        return Mathf.Sin(Time.time * 5);
+        return Mathf.Sin(Time.time * 200) / 20;
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {
-       
-        
-        
+
+
+
     }
 
-    
+    void FixedUpdate()
+    {
+        // wobblelvl = wobblesin+1;
+        masterMixer.SetFloat("Pitch", wobblesin() + 1);
+    }
 
     // Update is called once per frame
     void Update()
     {
-//
-       
+        //
+
     }
-   
+    public void killEars()
+    {
+        masterMixer.SetFloat("Pitch", wobblesin());
+    }
 }
