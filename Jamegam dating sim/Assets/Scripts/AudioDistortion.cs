@@ -9,7 +9,7 @@ public class AudioDistortion : MonoBehaviour
     public float wobblelvl;
     float wobblesin()
     {
-        return Mathf.Sin(Time.time * 200) / 20;
+        return Mathf.Sin(Mathf.Sin(Time.time * 200) / 20);
     }
 
     // Start is called before the first frame update
