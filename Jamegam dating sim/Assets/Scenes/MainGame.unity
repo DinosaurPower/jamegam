@@ -356,7 +356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c38204a7c6e541928d35ce01de0cff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wobble: {fileID: 1118949627}
   slugNumber: 0
   dolphinNumber: 0
   carrotNumber: 0
@@ -420,8 +419,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 936202600}
-        m_TargetAssemblyTypeName: Counter, Assembly-CSharp
+      - m_Target: {fileID: 936202604}
+        m_TargetAssemblyTypeName: wobbleKing, Assembly-CSharp
         m_MethodName: Wobble
         m_Mode: 1
         m_Arguments:
