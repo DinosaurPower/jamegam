@@ -9,8 +9,8 @@ public class Counter : MonoBehaviour
     public int slugNumber;
     public int dolphinNumber;
     public int carrotNumber;
+    public GameObject SceneManager;
 
-    //this is already scored numbers, they are stored in stat manager
     public int slugCount;
     public int dolphinCount;
     public int carrotCount;
@@ -18,11 +18,18 @@ public class Counter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject sceneManager = GameObject.Find("STAT_MANAGER");
+        StatManager statManager = SceneManager.GetComponent<StatManager>();
         //here I am getting stats from stat manager
         //it is WIP yet :p
         // slugCount = GetComponent<StatManager>().slugStat;
         //dolphinCount = GetComponent<StatManager>().dolphinStat;
         //carrotCount = GetComponent<StatManager>().carrotStat;
+
+        slugCount = GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().slugStat;
+        carrotCount = GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().carrotStat;
+        dolphinCount = GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().dolphinStat;
+
     }
 
     // Update is called once per frame
@@ -33,8 +40,11 @@ public class Counter : MonoBehaviour
     public void Count()
     {
         //counting system in work
-        slugCount = slugCount + slugNumber;
+  slugCount = slugCount + slugNumber;
         dolphinCount = dolphinCount + dolphinNumber;
         carrotCount = carrotCount + carrotNumber;
+
+        GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().UpdateCount();
+
     }
 }

@@ -8,7 +8,7 @@ public class StatManager : MonoBehaviour
     public int slugStat;
     public int dolphinStat;
     public int carrotStat;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,12 @@ public class StatManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       
+    }
+    public void UpdateCount()
+    {
+        slugStat = GameObject.FindWithTag("Button").GetComponent<Counter>().slugCount;
+        carrotStat = GameObject.FindWithTag("Button").GetComponent<Counter>().carrotCount;
+        dolphinStat = GameObject.FindWithTag("Button").GetComponent<Counter>().dolphinCount;
     }
 }
