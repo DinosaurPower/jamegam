@@ -1,21 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioDistortion : MonoBehaviour
 {
+    public AudioMixer masterMixer;
+    public float wobblelvl;
+  float wobblesin()
+    {
+        return Mathf.Sin(Time.time * 5);
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
-        //Fetch the AudioSource from the GameObject
-        m_MyAudioSource = GetComponent<AudioSource>();
-        //Ensure the toggle is set to true for the music to play at start-up
-        m_Play = true;
+       
+        
+        
     }
+
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+//
+       
     }
+   
 }

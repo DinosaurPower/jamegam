@@ -9,7 +9,7 @@ public class Counter : MonoBehaviour
     public int slugNumber;
     public int dolphinNumber;
     public int carrotNumber;
-    public GameObject SceneManager;
+    public GameObject NumberManager;
 
     public int slugCount;
     public int dolphinCount;
@@ -19,7 +19,7 @@ public class Counter : MonoBehaviour
     void Start()
     {
         GameObject sceneManager = GameObject.Find("STAT_MANAGER");
-        StatManager statManager = SceneManager.GetComponent<StatManager>();
+        StatManager statManager = NumberManager.GetComponent<StatManager>();
         //here I am getting stats from stat manager
         //it is WIP yet :p
         // slugCount = GetComponent<StatManager>().slugStat;
