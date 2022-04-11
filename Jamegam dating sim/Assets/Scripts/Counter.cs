@@ -39,16 +39,25 @@ public class Counter : MonoBehaviour
     {
 
     }
-    public void Count()
+    public void DolphinCount()
     {
         //counting system in work
-  slugCount = slugCount + slugNumber;
+        
         dolphinCount = dolphinCount + dolphinNumber;
-        carrotCount = carrotCount + carrotNumber;
 
         GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().UpdateCount();
-
     }
-   
+
+    public void SlugCount()
+    {
+        slugCount = slugCount + slugNumber;
+        GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().UpdateCount();
+    }
+
+    public void CarrotCount()
+    {
+        carrotCount = carrotCount + carrotNumber;
+        GameObject.Find("STAT_MANAGER").GetComponent<StatManager>().UpdateCount();
+    }
 
 }

@@ -23,8 +23,8 @@ public class StatManager : MonoBehaviour
     }
     public void UpdateCount()
     {
-        slugStat = GameObject.FindWithTag("Button").GetComponent<Counter>().slugCount;
-        carrotStat = GameObject.FindWithTag("Button").GetComponent<Counter>().carrotCount;
-        dolphinStat = GameObject.FindWithTag("Button").GetComponent<Counter>().dolphinCount;
+        slugStat = GameObject.Find("SlugButton").GetComponent<Counter>().slugCount;
+        carrotStat =  GameObject.Find("CarrotButton").GetComponent<Counter>().carrotCount;
+        dolphinStat = GameObject.Find("DolphinButton").GetComponent<Counter>().dolphinCount;
     }
 }
