@@ -20,9 +20,9 @@ public class PrintText : MonoBehaviour
     void Start()
     {
         //calls how many points each character has recieved based on player choices (clunky but fine)
-        int slugStat = GameObject.Find("SlugButton").GetComponent<Counter>().slugCount;
-        int carrotStat = GameObject.Find("CarrotButton").GetComponent<Counter>().carrotCount;
-        int dolphinStat = GameObject.Find("DolphinButton").GetComponent<Counter>().dolphinCount;
+        int slugStat = GameObject.FindWithTag("SlugButton").GetComponent<Counter>().slugCount; //divide by 4??? or minus 3
+        int carrotStat = GameObject.FindWithTag("CarrotButton").GetComponent<Counter>().carrotCount;
+        int dolphinStat = GameObject.FindWithTag("DolphinButton").GetComponent<Counter>().dolphinCount;
 
         int rando = Random.Range(0, 3);
 
@@ -51,6 +51,7 @@ public class PrintText : MonoBehaviour
         string[] foodResponse = { "My grandfather died in the same circumstances...", "Good choice. And I would love a pitcher of water, please.", "Good choice, lettuce is so ALTERNATIVE." };
         string[] interestsResponse = { "Oh I've seen star wars! I’ve bought some for my kids but they are too young to play with legos, they make the most abominable creations. So I do it myself.", "I love star wars! In Attack Of The Clones, we can clearly see that Anakin's shadow on the wall of the moisture farmhouse is reminiscent of Darth Vader's striking silhouette.", "ewwwww, so basic. I prefer hungarian arthouse, it does not kiss Disney’s ass." };
         sentence = greetingResponse[counterIndex];
+        //add other 3
         DisplayNextSentence();
     }
 
