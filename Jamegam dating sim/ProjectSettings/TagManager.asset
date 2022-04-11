@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Button
+  - DolphinButton
+  - CarrotButton
+  - SlugButton
   layers:
   - Default
   - TransparentFX
