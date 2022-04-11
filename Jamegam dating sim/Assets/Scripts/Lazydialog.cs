@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 
 
+
 public class Lazydialog : MonoBehaviour
 {
     public int counterIndex; //this variable draws from counter script (Or a seperate script that only determines who was chosen) and gives an index of a string within appropriate array
@@ -30,7 +31,7 @@ public class Lazydialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log("started");
         int slugStat = GameObject.FindWithTag("SlugButton").GetComponent<Counter>().slugCount; //divide by 4??? or minus 3
         int carrotStat = GameObject.FindWithTag("CarrotButton").GetComponent<Counter>().carrotCount;
         int dolphinStat = GameObject.FindWithTag("DolphinButton").GetComponent<Counter>().dolphinCount;
@@ -51,6 +52,7 @@ public class Lazydialog : MonoBehaviour
     //numbrawr
     void Update()
     {
+        Debug.Log("working");
         if (slugStat > carrotStat && slugStat > dolphinStat)
         {
             numbrawr = 1;
@@ -71,31 +73,18 @@ public class Lazydialog : MonoBehaviour
             numbrawr = rando;
             Debug.Log(rando);
         }
+        sentence = godzillabanana[numbrawr];
         DisplayNextSentence();
 
-        sentence = godzillabanana[numbrawr];
-
+      
+         
 
         // Debug.Log(counterIndex);
     }
 
-    public void GrandReveal()
-    {
-        if (numbrawr == 1)
-        {
-          
-        }
-        else if (numbrawr == 2)
-        {
-           
-        }
-        else
-        {
-            
-        }
-    }
     public void DisplayNextSentence()
     {
+        Debug.Log("display");
         textDisplay.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -103,6 +92,7 @@ public class Lazydialog : MonoBehaviour
     //one by one each letter layout
     private IEnumerator TypeSentence(string sentence)
     {
+        Debug.Log("wefijhpew");
         textDisplay.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
