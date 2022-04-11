@@ -30,7 +30,7 @@ public class Spritepick : MonoBehaviour
         int carrotStat = GameObject.FindWithTag("CarrotButton").GetComponent<Counter>().carrotCount;
         int dolphinStat = GameObject.FindWithTag("DolphinButton").GetComponent<Counter>().dolphinCount;
 
-        int rando = Random.Range(1, 3);
+        int rando = Random.Range(1, 4);
 
         //create a function of nested if statements
        
